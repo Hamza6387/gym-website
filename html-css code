@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gidole&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <title>Fitness website</title>
+    <style>
+        body {
+            font-family: "Ubuntu", sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url(img/pexels-anush-1229356.jpg);
+            background-size: cover;
+
+
+        }
+
+        .left {
+            /* border: 2px red solid; */
+            display: inline-block;
+            position: absolute;
+            left: 30px;
+            top: 20px;
+        }
+
+        .mid {
+            /* border: 2px green solid; */
+            display: block;
+            width: 35%;
+            margin: 20px auto;
+            top: 20px;
+
+        }
+
+        .right {
+            /* border: 2px yellow solid; */
+            display: inline-block;
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            padding: 9px 8px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+
+
+        }
+
+        .navbar li a {
+            font-size: 16px;
+            padding: 0px 20px;
+            color: white;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover,
+        .navbar li a:active {
+            color: lightblue;
+            text-decoration: underline;
+        }
+
+        .left img {
+            filter: invert(100%);
+            width: 120px;
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .left:hover {
+            color: orange;
+        }
+
+        .btn {
+            font-family: "Ubuntu", sans-serif;
+            padding: 4px 6px;
+            color: white;
+            background-color: black;
+            cursor: pointer;
+            margin: 4px 11px;
+            border: 2px solid grey;
+            border-radius: 8px;
+            font-size: 12px;
+            display: inline-block;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(62, 60, 60);
+        }
+
+        .container {
+            border: 2px white solid;
+            border-radius: 12px;
+            margin: 52px 119px;
+            padding: 127px 17px;
+            width: 31%;
+            height: 197px;
+            display: inline-block;
+
+        }
+
+        .form-group input {
+            font-family: "Ubuntu", sans-serif;
+            width: 55%;
+            margin: 4px auto;
+            padding: 4px;
+            border: 2px solid green;
+            border-radius: 10px;
+            display: block;
+            font-size: 16px;
+            text-align: center;
+
+        }
+
+        .form-group input:hover {
+
+            background-color: orange;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container .btn {
+            width: 26%;
+            display: block;
+            margin: 7px auto;
+            padding: 6px 6px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/download.jpg" alt="not found">
+            <div>Fitness </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="https://goldsgym.in/" target="_blank">About us</a></li>
+                <li><a href="https://www.calculator.net/bmi-calculator.html" target="_blank">Fitness calculator</a></li>
+                <li><a href="https://google.com" target="_blank">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <i class="fa fa-phone" style="font-size:13px"><button class="btn">Call us now</button></i>
+            <i class="fa fa-envelope" style="font-size:13px"><button class="btn">Email us now</button></i>
+        </div>
+    </header>
+    <div class="container">
+
+        <h1>Enter your information in boxes</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" age="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" address="" placeholder="Enter your address">
+            </div>
+            <div class="form-group">
+                <input type="text" contact number="" placeholder="Contact">
+            </div>
+
+            <button class="btn" type="submit">submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
